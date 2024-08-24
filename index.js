@@ -1,4 +1,5 @@
 // Select the input field and button
+const { exec } = require('child_process');
 const userInput = document.getElementById('userInput');
 const submitButton = document.getElementById('submitButton');
 
@@ -9,5 +10,8 @@ submitButton.addEventListener('click', () => {
     
     // Print the input value to the console
     console.log('User input:', inputValue);
+
+    // Execute a C program
+    // exec('./hello');
 });
 
